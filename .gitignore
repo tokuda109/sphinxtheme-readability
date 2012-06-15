@@ -4,3 +4,5 @@
 .pydevproject
 .settings/*
 *.py[co]
+*.egg-info
+_build
