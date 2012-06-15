@@ -1,2 +1,2 @@
-
-
+Sphinx Readability Theme
+========================
