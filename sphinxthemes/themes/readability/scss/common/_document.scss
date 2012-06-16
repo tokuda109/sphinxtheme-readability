@@ -56,7 +56,13 @@ body {
   h2 {
     margin: 1.5em 0 .75em;
   }
+  h3 {
+    margin: 1em 0 .5em;
+  }
   .section {
+  }
+}
+
     p {
       margin: 1.2em 0;
       line-height: 1.7em;
@@ -89,5 +95,3 @@ body {
       line-height: 1.7em;
       @include percent-font-size(14);
     }
-  }
-}

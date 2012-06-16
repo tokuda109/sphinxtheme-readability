@@ -1,0 +1,35 @@
+.admonition {
+  margin-bottom: 10px;
+  padding: 7px 10px;
+  background-color: #EEE;
+  border-color: #DDD;
+  border-style: solid;
+  border-width: 1px;
+  p {
+    margin: 0;
+  }
+  .admonition-title {
+    margin-bottom: .3em;
+    font-weight: bold;
+  }
+  &.attention,
+  &.caution,
+  &.danger,
+  &.error {
+    background-color: #EED3D7;
+    border-color: #E1E1E8;
+    color: #B94A48;
+  }
+  &.important,
+  &.note {
+    background-color: #DFF0D8;
+    border-color: #D6E9C6;
+    color: #468847;
+  }
+  &.hint,
+  &.tip {
+    background-color: #D9EDF7;
+    border-color: #BCE8F1;
+    color: #3A87AD;
+  }
+}
