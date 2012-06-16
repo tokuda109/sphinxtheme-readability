@@ -2,8 +2,9 @@
 
 from setuptools import setup, find_packages
 
-long_description = ''.join([
-    open("README.rst").read()
+long_description = '\n'.join([
+    open("README.rst").read(),
+    open("CHANGES").read(),
 ])
 
 setup(
@@ -17,7 +18,7 @@ setup(
     long_description=long_description,
     keywords=['Sphinx', 'Readability', 'Theme', 'reStructuredText'],
     packages=find_packages(),
-    zip_safe=False,
+    include_package_data=True,
     install_requires=[
         'setuptools',
         'docutils',
@@ -31,5 +32,6 @@ setup(
         'Topic :: Software Development',
         'Topic :: Software Development :: Documentation',
         'Topic :: Text Processing :: Markup'
-    ]
+    ],
+    zip_safe=False,
 )
