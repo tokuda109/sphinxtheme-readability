@@ -7,7 +7,7 @@ long_description = ''.join([
 ])
 
 setup(
-    name='sphinxthemes.readability',
+    name='sphinxtheme.readability',
     version='0.0.1',
     url='http://sphinx-themes-readability.readthedocs.org/',
     license='BSD',

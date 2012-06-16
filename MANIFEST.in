@@ -3,5 +3,4 @@ include CHANGES
 include README
 
 recursive-include docs *
-recursive-include sphinxthemes/themes *
-recursive-include *.py *.txt *.html *.css* *.conf *.png
+recursive-include sphinxtheme/theme *
