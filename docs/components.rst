@@ -11,9 +11,14 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 Headings
 ^^^^^^^^
 
-Heading 3
-^^^^^^^^^
+.. raw:: html
 
+   <h1>Heading 1</h1>
+   <h2>Heading 2</h2>
+   <h3>Heading 3</h3>
+   <h4>Heading 4</h4>
+   <h5>Heading 5</h5>
+   <h6>Heading 6</h6>
 
 Paragraph
 ^^^^^^^^^
@@ -78,7 +83,15 @@ figure
 Pre, Code
 ---------
 
+.. code-block:: python
 
+   import sys
+
+   def fact(x):
+       if x == 0:
+           return 1
+       else:
+           return x * fact(x-1)
 
 Admonitions
 -----------
