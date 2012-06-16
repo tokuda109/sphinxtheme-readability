@@ -18,6 +18,7 @@ Contents:
 
    components
    changelog
+   license
 
 Indices and tables
 ==================
