@@ -2,6 +2,10 @@
 
 from setuptools import setup, find_packages
 
+long_description = ''.join([
+    open("README.rst").read()
+])
+
 setup(
     name='sphinxthemes.readability',
     version='0.0.1',
@@ -10,6 +14,7 @@ setup(
     author='Tsuyoshi Tokuda',
     author_email='tokuda109@gmail.com',
     description='Readability sphinx theme',
+    long_description=long_description,
     keywords=['Sphinx', 'Readability', 'Theme', 'reStructuredText'],
     packages=find_packages(),
     zip_safe=False,
