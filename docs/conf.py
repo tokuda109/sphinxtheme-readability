@@ -11,6 +11,12 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
+import sys, os
+import sphinxtheme
+
+readability_path = os.path.dirname(os.path.abspath(sphinxtheme.__file__))
+relative_path = os.path.relpath(readability_path, os.path.abspath('.'))
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -97,7 +103,7 @@ html_theme = 'readability'
 #html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ['../sphinxtheme/theme']
+html_theme_path = [relative_path]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
