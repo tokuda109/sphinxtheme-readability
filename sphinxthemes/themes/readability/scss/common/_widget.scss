@@ -1,0 +1,25 @@
+.widget {
+  margin: 0 0 10px;
+  .widgetHead {
+    font: {
+      size: 12px;
+      weight: bold;
+    }
+  }
+  .widgetBody {
+    
+  }
+  &#searchbox {
+    
+  }
+  &.copyright,
+  &.updated,
+  &.version {
+    .widgetBody {
+      p {
+        font-size: 11px;
+        color: #777;
+      }
+    }
+  }
+}
