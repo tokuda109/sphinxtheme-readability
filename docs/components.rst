@@ -4,10 +4,6 @@ Components
 Typography
 ----------
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
 Headings
 ^^^^^^^^
 
@@ -23,10 +19,16 @@ Headings
 Paragraph
 ^^^^^^^^^
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 Anchor
 ^^^^^^
+
+`Anchor`_
+
+.. _Anchor: #
 
 Strong, Emphasis
 ^^^^^^^^^^^^^^^^
@@ -68,14 +70,36 @@ Ordered list
 2. Ordered list
 3. Ordered list
 
-Description list
+Definition Lists
 ^^^^^^^^^^^^^^^^
 
-Image
------
+term 1
+    Definition 1.
+term 2
+    Definition 2, paragraph 1.
+    Definition 2, paragraph 2.
+term 3 : classifier
+    Definition 3.
+term 4 : classifier one : classifier two
+    Definition 4.
+
+
+Images
+------
+
+There are two image directives: "image" and "figure".
 
 image
 ^^^^^
+
+An "image" is a simple picture.
+
+The URI for the image source file is specified in the directive argument.
+As with hyperlink targets, the image URI may begin on the same line as the
+explicit markup start and target name, or it may begin in an indented
+text block immediately following, with no intervening blank lines.
+If there are multiple lines in the link block, they are stripped of leading
+and trailing whitespace and joined together.
 
 figure
 ^^^^^^
@@ -95,6 +119,9 @@ Pre, Code
 
 Admonitions
 -----------
+
+Admonitions are specially marked "topics" that can appear anywhere an ordinary
+body element can. They contain arbitrary body elements.
 
 attention
 ^^^^^^^^^
