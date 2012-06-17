@@ -7,6 +7,10 @@ body {
   margin-bottom: 1em;
   padding-bottom: 1.2em;
   background: url('bg_double.png') repeat-x bottom left;
+  p {
+    margin: 0;
+    @include percent-font-size(13);
+  }
   .rel {
     position: absolute;
     top: 0;
@@ -60,38 +64,38 @@ body {
     margin: 1em 0 .5em;
   }
   .section {
+    margin-bottom: 10px;
   }
 }
-
-    p {
-      margin: 1.2em 0;
-      line-height: 1.7em;
-      @include percent-font-size(16);
-    }
-    ul,ol {
-      margin: 1.2em 0;
-    }
-    ul {
-      padding-left: 1.2em;
-      ul {
-        margin: .2em 0;
-      }
-    }
-    ol {
-      padding-left: 1.5em;
-      li {
-        list-style-type: decimal;
-      }
-    }
-    dl {
-      dt {
-        font-weight: bold;
-      }
-      dd {
-        padding-left: 1em;
-      }
-    }
-    li,dt,dd {
-      line-height: 1.7em;
-      @include percent-font-size(14);
-    }
+p {
+  margin: 1.2em 0;
+  line-height: 1.7em;
+  @include percent-font-size(16);
+}
+ul,ol {
+  margin: 1.2em 0;
+}
+ul {
+  padding-left: 1.2em;
+  ul {
+    margin: .2em 0;
+  }
+}
+ol {
+  padding-left: 1.5em;
+  li {
+    list-style-type: decimal;
+  }
+}
+dl {
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    padding-left: 1em;
+  }
+}
+li,dt,dd {
+  line-height: 1.8em;
+  @include percent-font-size(14);
+}
