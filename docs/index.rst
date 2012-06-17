@@ -14,8 +14,9 @@ Sphinx Readability Theme provides a comfortably reading environment for your doc
 Contents:
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
+   installation
    components
    changelog
    license
