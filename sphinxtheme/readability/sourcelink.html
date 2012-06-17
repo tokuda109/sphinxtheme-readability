@@ -1,0 +1,10 @@
+{%- if show_source and has_source and sourcename %}
+    <div class="widget logo">
+      <div class="widgetHead">
+        <h4>{{ _('This Page') }}</h4>
+      </div>
+      <div class="widgetBody">
+        <a href="{{ pathto('_sources/' + sourcename, true)|e }}">{{ _('Show Source') }}</a>
+      </div>
+    </div><!-- .widget -->
+{%- endif %}

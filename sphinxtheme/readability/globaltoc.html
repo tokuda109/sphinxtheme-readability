@@ -1,10 +1,8 @@
-{%- if display_toc %}
     <div class="widget logo">
       <div class="widgetHead">
         <h4>{{ _('Table Of Contents') }}</h4>
       </div>
       <div class="widgetBody">
-        {{ toc }}
+        {{ toctree() }}
       </div>
     </div><!-- .widget -->
-{%- endif %}
