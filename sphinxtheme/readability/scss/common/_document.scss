@@ -51,21 +51,37 @@ body {
   }
 }
 #document {
-  h1 {
-    margin-bottom: 30px;
-    line-height: 1.7em;
-    @include percent-font-size(30);
-    font-weight: 800;
-  }
-  h2 {
-    margin: 1.5em 0 .75em;
-  }
-  h3 {
-    margin: 1em 0 .5em;
-  }
   .section {
     margin-bottom: 10px;
   }
+}
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1.7em;
+  font: {
+    family: inherit;
+    weight: bold;
+  }
+}
+h1 {
+  margin-bottom: 30px;
+  @include percent-font-size(30);
+}
+h2 {
+  margin: 1.5em 0 .75em;
+  @include percent-font-size(24);
+}
+h3 {
+  margin: 1em 0 .5em;
+  @include percent-font-size(20);
+}
+h4, h5, h6 {
+  @include percent-font-size(16);
+}
+h5 {
+  color: #444;
+}
+h6 {
+  color: #999;
 }
 p {
   margin: 1.2em 0;

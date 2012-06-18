@@ -1,3 +1,6 @@
+body {
+  position: relative;
+}
 #container {
   margin: 0 0 0 270px;
   padding: 20px;
@@ -5,7 +8,7 @@
   min-width: 300px;
 }
 #sidebar {
-  position: fixed;
+  position: absolute;
   top: 20px;
   left: 15px;
   width: 240px;
