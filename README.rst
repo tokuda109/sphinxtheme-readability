@@ -1,6 +1,9 @@
 Sphinx Readability Theme
 ========================
 
+.. attention:: Experimental!
+   This theme is an experimental and rapidly developing.
+
 Sphinx Readability Theme provides a comfortably reading environment for your documentation.
 
 This theme is inspired by `Readability <https://www.readability.com/>`_.

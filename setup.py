@@ -9,12 +9,12 @@ long_description = '\n'.join([
 
 setup(
     name='sphinxtheme.readability',
-    version='0.0.1',
-    url='http://sphinx-themes-readability.readthedocs.org/',
+    version='0.0.2',
+    url='http://sphinxtheme-readability.readthedocs.org/',
     license='BSD',
     author='Tsuyoshi Tokuda',
     author_email='tokuda109@gmail.com',
-    description='Readability sphinx theme',
+    description='Sphinx Readability Theme',
     long_description=long_description,
     keywords=['Sphinx', 'Readability', 'Theme', 'reStructuredText'],
     packages=find_packages(),
