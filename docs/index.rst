@@ -11,7 +11,8 @@ What Is It?
 
 Sphinx Readability Theme provides a comfortably reading environment for your documentation.
 
-Contents:
+User’s Guide
+------------
 
 .. toctree::
    :maxdepth: 2
@@ -20,11 +21,3 @@ Contents:
    components
    changelog
    license
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
