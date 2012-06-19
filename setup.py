@@ -1,20 +1,21 @@
 # -*- coding: utf-8 -*-
 
+import os
 from setuptools import setup, find_packages
 
 long_description = '\n'.join([
-    open("README.rst").read(),
-    open("CHANGES").read(),
+    open(os.path.abspath("./README.rst")).read(),
+    open(os.path.abspath("./CHANGES")).read(),
 ])
 
 setup(
     name='sphinxtheme.readability',
-    version='0.0.2',
+    version='0.0.3',
     url='http://sphinxtheme-readability.readthedocs.org/',
     license='BSD',
     author='Tsuyoshi Tokuda',
     author_email='tokuda109@gmail.com',
-    description='Sphinx Readability Theme',
+    description='Sphinx Readability Theme provides a comfortably reading environment for your documentation.',
     long_description=long_description,
     keywords=['Sphinx', 'Readability', 'Theme', 'reStructuredText'],
     packages=find_packages(),
