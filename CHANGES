@@ -1,6 +1,13 @@
 Changelog
 =========
 
+Version 0.0.4
+-------------
+
+Released on June 19 2012
+
+- Fixed CHANGES is not registered in the manifest.in
+
 Version 0.0.3
 -------------
 
