@@ -3,6 +3,7 @@
 import os
 from setuptools import setup, find_packages
 
+version = '0.0.4'
 long_description = '\n'.join([
     open(os.path.abspath("./README.rst")).read(),
     open(os.path.abspath("./CHANGES")).read(),
@@ -10,7 +11,7 @@ long_description = '\n'.join([
 
 setup(
     name='sphinxtheme.readability',
-    version='0.0.3',
+    version=version,
     url='http://sphinxtheme-readability.readthedocs.org/',
     license='BSD',
     author='Tsuyoshi Tokuda',
