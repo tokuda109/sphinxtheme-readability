@@ -6,5 +6,6 @@
 *.py[co]
 *.egg-info
 _build
+build
 dist
 eggs

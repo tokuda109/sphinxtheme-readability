@@ -1,13 +1,19 @@
 Changelog
 =========
 
+Version 0.0.3
+-------------
+
+Released on June 19 2012
+
+- Fixed path when README.rst is opened at installing
+
 Version 0.0.2
 -------------
 
-Released on June XX 2012
+Released on June 18 2012
 
 - Converted to python package
-- Cleanup style
 
 Version 0.0.1
 -------------
