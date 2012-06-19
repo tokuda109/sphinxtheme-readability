@@ -1,6 +1,15 @@
 Changelog
 =========
 
+Version 0.0.5
+-------------
+
+Released on June XX 2012
+
+- Create themes other than "newspaper theme"
+- Fix search template
+- text-rendering property of the headings is applied to OptimizeLegibility
+
 Version 0.0.4
 -------------
 
