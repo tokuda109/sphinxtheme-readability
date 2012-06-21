@@ -4,6 +4,9 @@ Components
 Typography
 ----------
 
+.. index::
+   single: Headings
+
 Headings
 ^^^^^^^^
 
