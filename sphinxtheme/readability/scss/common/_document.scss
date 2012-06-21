@@ -101,6 +101,7 @@ ul {
     margin: .2em 0;
     li {
       list-style: square inside;
+      @include percent-font-size(13);
     }
   }
 }
