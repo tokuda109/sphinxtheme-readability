@@ -6,6 +6,9 @@ This part of the documentation covers the installation of Sphinx Readability The
 Distribute & Pip
 ----------------
 
+To use this style in your Sphinx documentation, follow
+this guide.
+
 Installing this theme is simple with pip::
 
     $ pip install sphinxtheme.readability
@@ -13,6 +16,16 @@ Installing this theme is simple with pip::
 or, with easy_install::
 
     $ sudo easy_install sphinxtheme.readability
+
+Add this to your conf.py::
+
+    import sphinxtheme
+
+    readability_path = os.path.dirname(os.path.abspath(sphinxtheme.__file__))
+    relative_path = os.path.relpath(readability_path, os.path.abspath('.'))
+
+    html_theme = 'readability'
+    html_theme_path = [relative_path]
 
 Themes
 ------
