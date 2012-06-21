@@ -1,4 +1,15 @@
 body {
-  background: #F7F7F7 url("side_inverse.png") repeat-y top left;
+  background: #343A3F url("side_inverse.png") repeat-y top left;
   color: $default-font-color;
+}
+.rel {
+  a {
+    color: #D6DBDF;
+    span {
+      background-color: #434E5E;
+    }
+    &:after {
+      background-color: #434E5E;
+    }
+  }
 }
