@@ -18,7 +18,7 @@
   &.danger,
   &.error {
     background-color: #EED3D7;
-    border-color: #B94A48;
+    border-color: #FFCCCC;
     color: #B94A48;
   }
   &.important,
@@ -29,9 +29,9 @@
   }
   &.hint,
   &.tip {
-    background-color: #D9EDF7;
-    border-color: #BCE8F1;
-    color: #3A87AD;
+    background-color: #E5ECF9;
+    border-color: #3366CC;
+    color: #1155CC;
   }
   &.warning {
     background-color: #FFFBD9;
