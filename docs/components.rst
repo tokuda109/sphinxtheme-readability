@@ -60,7 +60,8 @@ Anchor
 .. _Anchor: #
 
 .. index::
-   single: Strong; Emphasis
+   single: Strong
+   single: Emphasis
 
 Strong, Emphasis
 ^^^^^^^^^^^^^^^^

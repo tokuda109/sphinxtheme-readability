@@ -6,14 +6,13 @@ This part of the documentation covers the installation of Sphinx Readability The
 Distribute & Pip
 ----------------
 
-To use this style in your Sphinx documentation, follow
-this guide.
+To use this style in your Sphinx documentation, follow this guide.
 
 Installing this theme is simple with pip::
 
     $ pip install sphinxtheme.readability
 
-or, with easy_install::
+Or, with easy_install::
 
     $ sudo easy_install sphinxtheme.readability
 
@@ -32,11 +31,11 @@ Themes
 
 The following themes exist:
 
-- athelas
-- ebook
-- inverse
 - newspaper
 - novel
+- ebook
+- inverse
+- athelas
 
 Options
 -------
