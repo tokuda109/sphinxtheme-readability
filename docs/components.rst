@@ -148,7 +148,8 @@ For page-based output media, figures might float to a different position if this
 helps the page layout.
 
 .. index::
-   single: Pre, Code
+   single: Pre
+   single: Code
 
 Pre, Code
 ---------
