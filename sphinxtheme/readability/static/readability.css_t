@@ -1,7 +1,0 @@
-@import url("basic.css");
-
-body {
-  background-color: #FDFDFA;
-  font-family: Georgia, "Times New Roman", serif;
-  color: #080000;
-}
