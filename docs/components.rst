@@ -37,6 +37,9 @@ And heading takes a lot of margin in order to stand out.
 
    <h6>Heading 6</h6>
 
+.. index::
+   single: Paragraph
+
 Paragraph
 ^^^^^^^^^
 
@@ -46,6 +49,9 @@ from other body elements.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+.. index::
+   single: Anchor
+
 Anchor
 ^^^^^^
 
@@ -53,12 +59,18 @@ Anchor
 
 .. _Anchor: #
 
+.. index::
+   single: Strong; Emphasis
+
 Strong, Emphasis
 ^^^^^^^^^^^^^^^^
 
 Strong: **Lorem ipsum** dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.
 
 Emphasis: *Lorem ipsum* dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.
+
+.. index::
+   single: Table
 
 Table
 -----
@@ -73,6 +85,9 @@ Table
 +------------------------+------------+----------+----------+
 | body row 3             | ...        | ...      |          |
 +------------------------+------------+----------+----------+
+
+.. index::
+   single: List
 
 List
 ----
@@ -104,6 +119,8 @@ term 3 : classifier
 term 4 : classifier one : classifier two
     Definition 4.
 
+.. index::
+   single: Images
 
 Images
 ------
@@ -130,6 +147,9 @@ caption (a single paragraph), and an optional legend (arbitrary body elements).
 For page-based output media, figures might float to a different position if this
 helps the page layout.
 
+.. index::
+   single: Pre; Code
+
 Pre, Code
 ---------
 
@@ -142,6 +162,9 @@ Pre, Code
            return 1
        else:
            return x * fact(x-1)
+
+.. index::
+   single: Admonitions
 
 Admonitions
 -----------
