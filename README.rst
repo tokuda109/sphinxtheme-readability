@@ -31,3 +31,8 @@ Add this to your conf.py::
 
     html_theme = 'readability'
     html_theme_path = [relative_path]
+
+Author
+------
+
+- Tsuyoshi Tokuda (@tokuda109)
