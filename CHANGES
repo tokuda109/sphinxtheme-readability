@@ -1,6 +1,15 @@
 Changelog
 =========
 
+Version 0.0.6
+-------------
+
+Released on July XX 2012
+
+- Fixed line-height of relations h3
+- Fixed widget style
+- Added original pygments style
+
 Version 0.0.5
 -------------
 

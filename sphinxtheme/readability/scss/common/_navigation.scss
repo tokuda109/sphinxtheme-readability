@@ -9,6 +9,7 @@
     h3 {
       margin: 0;
       letter-spacing: 0.08em;
+      line-height: 1.2;
       @include percent-font-size(10);
       font-weight: normal;
     }
