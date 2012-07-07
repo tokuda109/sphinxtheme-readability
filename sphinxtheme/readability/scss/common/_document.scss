@@ -124,3 +124,8 @@ li,dt,dd {
   line-height: 1.8em;
   @include percent-font-size(14);
 }
+code {
+  margin: 0 3px;
+  padding: 2px;
+  border: solid 1px #EEE;
+}

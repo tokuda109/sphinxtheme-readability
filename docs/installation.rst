@@ -31,16 +31,25 @@ Themes
 
 The following themes exist:
 
-- newspaper
+- newspaper (default)
 - novel
 - ebook
 - inverse
 - athelas
+
+If you change theme for your document, ::
+
+    html_theme_options = {
+        'readabilitystyle': 'novel'
+    }
 
 Options
 -------
 
 The following options exist:
 
+- readabilitystyle
 - index_logo_name
 - index_logo_alt
+- nosidebar
+- sidebarwidth

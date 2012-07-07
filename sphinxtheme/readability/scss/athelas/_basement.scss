@@ -1,4 +1,23 @@
-body {
+body.athelas {
   background: #F7F7F7 url("side_athelas.png") repeat-y top left;
   color: $default-font-color;
+  a {
+    color: $default-link-color;
+    &:link {
+      text-decoration: none;
+      -webkit-tap-highlight-color: #D7DCDF;
+    }
+    &:visited {
+      text-decoration: none;
+      color: $default-visited-color;
+    }
+    &:hover {
+      text-decoration: underline;
+      color: $default-hover-color;
+    }
+    &:active {
+      text-decoration: underline;
+      color: $default-active-color;
+    }
+  }
 }

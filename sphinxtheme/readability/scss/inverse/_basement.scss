@@ -1,15 +1,34 @@
-body {
+body.inverse {
   background: #343A3F url("side_inverse.png") repeat-y top left;
   color: $default-font-color;
-}
-.rel {
   a {
-    color: #D6DBDF;
-    span {
-      background-color: #434E5E;
+    color: $default-link-color;
+    &:link {
+      text-decoration: none;
+      -webkit-tap-highlight-color: #D7DCDF;
     }
-    &:after {
-      background-color: #434E5E;
+    &:visited {
+      text-decoration: none;
+      color: $default-visited-color;
+    }
+    &:hover {
+      text-decoration: underline;
+      color: $default-hover-color;
+    }
+    &:active {
+      text-decoration: underline;
+      color: $default-active-color;
+    }
+  }
+  .rel {
+    a {
+      color: #D6DBDF;
+      &:after {
+        background-color: #434E5E;
+      }
+      span {
+        background-color: #434E5E;
+      }
     }
   }
 }
