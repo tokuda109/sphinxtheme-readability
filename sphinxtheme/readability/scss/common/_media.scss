@@ -1,0 +1,15 @@
+.figure {
+  padding: 5px;
+  background: #FFF;
+  border: solid 1px #CCC;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  img {
+    display: block;
+    text-align: center;
+  }
+  .caption {
+    @include percent-font-size(13);
+  }
+}

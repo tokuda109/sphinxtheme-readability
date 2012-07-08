@@ -156,20 +156,22 @@ image
 
 An "image" is a simple picture.
 
-The URI for the image source file is specified in the directive argument.
-As with hyperlink targets, the image URI may begin on the same line as the
-explicit markup start and target name, or it may begin in an indented
-text block immediately following, with no intervening blank lines.
-If there are multiple lines in the link block, they are stripped of leading
-and trailing whitespace and joined together.
+.. image:: _static/blossom.png
+   :width: 336px
+   :height: 450px
+   :alt: Cherry Blossom
 
 figure
 ^^^^^^
 
-A "figure" consists of image data (including image options), an optional
-caption (a single paragraph), and an optional legend (arbitrary body elements).
-For page-based output media, figures might float to a different position if this
-helps the page layout.
+.. figure:: _static/blossom.png
+   :width: 336px
+   :height: 450px
+   :alt: Cherry Blossom
+   :align: center
+
+   Figure Cherry Blossom
+
 
 .. index::
    single: Pre
