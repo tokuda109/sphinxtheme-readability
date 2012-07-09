@@ -9,13 +9,16 @@ Released on July XX 2012
 - Fixed line-height of relations h3
 - Fixed widget style
 - Added original pygments style
+- Added favicon
+- Clean up documentation
+- Some UI parts is fixed and updated its style
 
 Version 0.0.5
 -------------
 
 Released on June 23 2012
 
-- Add themes (''athelas'', ''ebook'', ''inverse'', ''novel'')
+- Added readability themes (''athelas'', ''ebook'', ''inverse'', ''novel'')
 - Fixed list style of the document has not been applied
 - Fixed warning style of the admonition has not been applied
 - text-rendering property of the headings is applied to OptimizeLegibility
