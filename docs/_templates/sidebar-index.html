@@ -3,7 +3,7 @@
     <div class="widget logo">
       <div class="widgetBody">
         <a href="{{ pathto(master_doc) }}">
-          <img src="{{ pathto('_static/' + logo, 1) }}"{% if docstitle %} alt="{{ docstitle|e }}"{% endif %} />
+          <img src="{{ pathto('_static/' + logo, 1) }}"{% if index_logo_alt %} alt="{{ index_logo_alt|e }}"{% endif %} />
         </a>
       </div>
     </div><!-- .widget -->

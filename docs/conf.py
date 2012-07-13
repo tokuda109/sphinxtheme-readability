@@ -103,7 +103,7 @@ html_theme = 'readability'
 html_theme_options = {
     "readabilitystyle": "newspaper",
     "index_logo_name": "logo.png",
-    "index_logo_alt": "Sphinx Readability Theme",
+    "index_logo_alt": "Sphinx Readability Theme"
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
