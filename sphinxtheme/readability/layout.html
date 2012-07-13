@@ -26,16 +26,6 @@ var DOCUMENTATION_OPTIONS = {
 {%- macro sidebar() %}
 {%- if render_sidebar %}
   <aside id="sidebar">
-{%- block sidebarlogo %}
-{%- if logo %}
-    <div class="widget logo">
-      <div class="widgetBody">
-        <a href="{{ pathto(master_doc) }}"><img src="{{ pathto('_static/' + logo, 1) }}" alt="Logo" /></a>
-      </div>
-    </div>
-{%- endif %}
-{%- endblock %}
-
 {%- if sidebars != None %}
 {%- for sidebartemplate in sidebars %}
 {%- include sidebartemplate %}
