@@ -85,7 +85,7 @@ exclude_patterns = ['_build']
 #show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = 'readability_theme_support.ReadabilityStyle'
 
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
@@ -103,7 +103,6 @@ html_theme = 'readability'
 html_theme_options = {
     "readabilitystyle": "newspaper",
     "index_logo_name": "logo.png",
-    "index_logo_alt": "Sphinx Readability Theme"
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -251,3 +250,8 @@ texinfo_documents = [
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'
+
+try:
+    __import__('readability_theme_support')
+except ImportError, e:
+    pygments_style = 'sphinx'
