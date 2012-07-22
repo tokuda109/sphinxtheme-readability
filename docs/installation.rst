@@ -16,6 +16,8 @@ Or, with easy_install::
 
     $ sudo easy_install sphinxtheme.readability
 
+A few seconds later and you are good to go.
+
 Setup
 -----
 
@@ -40,7 +42,7 @@ The following themes exist:
 - inverse
 - athelas
 
-If you change theme for your document, ::
+If you change theme for your document, you can change ``html_theme_options`` like this::
 
     html_theme_options = {
         'readabilitystyle': 'novel'
@@ -59,5 +61,7 @@ The following options exist:
 
 Pygments Style
 --------------
+
+If you want to use readability highlighted code, set below::
 
     pygments_style = 'readability_theme_support.ReadabilityStyle'
