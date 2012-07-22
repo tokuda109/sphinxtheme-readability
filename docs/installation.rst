@@ -16,7 +16,10 @@ Or, with easy_install::
 
     $ sudo easy_install sphinxtheme.readability
 
-Add this to your conf.py::
+Setup
+-----
+
+Add this to your ``conf.py``::
 
     import sphinxtheme
 

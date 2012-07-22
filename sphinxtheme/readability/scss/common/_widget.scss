@@ -20,7 +20,9 @@
   &.updated,
   &.version {
     .widgetBody {
+      border-top: dotted 1px #CCC;
       p {
+        margin: .8em 0;
         font-size: 11px;
         color: #777;
       }

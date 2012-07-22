@@ -11,6 +11,8 @@ What Is It?
 
 Sphinx Readability Theme provides a comfortably reading environment for your documentation.
 
+This theme is currently under heavy development.
+
 User’s Guide
 ------------
 
