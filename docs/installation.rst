@@ -53,3 +53,8 @@ The following options exist:
 - index_logo_alt
 - nosidebar
 - sidebarwidth
+
+Pygments Style
+--------------
+
+    pygments_style = 'readability_theme_support.ReadabilityStyle'
