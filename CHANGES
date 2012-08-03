@@ -4,7 +4,7 @@ Changelog
 Version 0.0.6
 -------------
 
-Released on July XX 2012
+Released on Aug XX 2012
 
 - Fixed line-height of relations h3
 - Fixed widget style
@@ -12,6 +12,8 @@ Released on July XX 2012
 - Added favicon
 - Clean up documentation
 - Some UI parts is fixed and updated its style
+- Various bug fixes
+- Added Sass document
 
 Version 0.0.5
 -------------
