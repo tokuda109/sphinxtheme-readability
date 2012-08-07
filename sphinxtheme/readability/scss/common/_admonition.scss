@@ -5,7 +5,7 @@
   border-color: $admonition-border-color;
   border-style: solid;
   border-width: 1px;
-  border-radius: 5px;
+  @include border-radius(5px);
   color: $admonition-font-color;
   p {
     margin: 0;
