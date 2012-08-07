@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 body {
   font-family: Georgia,"Times New Roman","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3",Meiryo,"メイリオ","ＭＳ Ｐ明朝",sans-serif;
 }
@@ -42,20 +43,55 @@ body {
       height: 19px;
       background-color: #AEAEAE;
       content: "";
-      -webkit-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
-      transform: rotate(-45deg);
+      @include transform-rotate(-45deg);
       z-index: 1;
     }
   }
 }
+/* Document
+================================================== */
 #document {
   .section {
     margin-bottom: 10px;
   }
 }
+/* Topic
+================================================== */
+.topic {
+  margin: 0 0 10px;
+  padding: 7px 10px;
+  background-color: #F1F1F1;
+  border: solid 1px #D4D4D4;
+  .topic-title {
+    margin: 0 0 .3em;
+    font-weight: bold;
+  }
+  p,ul {
+    margin: 0 0 .3em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+/* Align
+================================================== */
+.align-left {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+.align-right {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+.align-left,
+.align-right {
+  &:after {
+    content: "";
+    clear: both;
+  }
+}
+/* Element style
+================================================== */
 h1,h2,h3,h4,h5,h6 {
   line-height: 1.7em;
   text-rendering: optimizeLegibility;

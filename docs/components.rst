@@ -161,21 +161,40 @@ There are two image directives: "image" and "figure".
 image
 ^^^^^
 
-An "image" is a simple picture.
-
 .. image:: _static/blossom.png
+   :align: right
    :width: 336px
    :height: 450px
    :alt: Cherry Blossom
+
+An "image" is a simple picture.
+
+The URI for the image source file is specified in the directive argument.
+As with hyperlink targets, the image URI may begin on the same line as the explicit markup start and target name,
+or it may begin in an indented text block immediately following, with no intervening blank lines.
+If there are multiple lines in the link block, they are stripped of leading and trailing whitespace and joined together.
+
+The following options are recognized:
+
+- alt
+- width
+- height
+- scale
+- align
+- target
+
 
 figure
 ^^^^^^
 
+A "figure" consists of image data (including image options),
+an optional caption (a single paragraph), and an optional legend (arbitrary body elements).
+
 .. figure:: _static/blossom.png
+   :align: right
    :width: 336px
    :height: 450px
    :alt: Cherry Blossom
-   :align: center
 
    Figure Cherry Blossom
 
@@ -196,6 +215,23 @@ Pre, Code
            return 1
        else:
            return x * fact(x-1)
+
+
+.. index::
+   single: Topic
+
+.. _topic:
+
+Topic
+-----
+
+A topic is like a block quote with a title, or a self-contained section with no subsections.
+
+.. topic:: Topic Title
+
+   Subsequent indented lines comprise
+   the body of the topic, and are
+   interpreted as body elements.
 
 
 .. index::
