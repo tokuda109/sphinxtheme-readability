@@ -9,6 +9,10 @@
     text-align: center;
   }
   .caption {
+    margin: 0 0 5px;
     @include percent-font-size(13);
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
