@@ -3,7 +3,7 @@
 import os
 from setuptools import setup, find_packages
 
-version = '0.0.5'
+version = '0.0.6'
 long_description = '\n'.join([
     open(os.path.abspath("./README.rst")).read(),
     open(os.path.abspath("./CHANGES")).read(),
