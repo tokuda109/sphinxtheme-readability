@@ -92,16 +92,24 @@ Emphasis: *Lorem ipsum* dolor sit amet, consectetur adipiscing elit. Integer pos
 Table
 -----
 
-+------------------------+------------+----------+----------+
-| Header row, column 1   | Header 2   | Header 3 | Header 4 |
-| (header rows optional) |            |          |          |
-+========================+============+==========+==========+
-| body row 1, column 1   | column 2   | column 3 | column 4 |
-+------------------------+------------+----------+----------+
-| body row 2             | ...        | ...      |          |
-+------------------------+------------+----------+----------+
-| body row 3             | ...        | ...      |          |
-+------------------------+------------+----------+----------+
+The following example illustrates continuation lines (row 2 consists of two lines of text, and four lines for row 3),
+a blank line separating paragraphs (row 3, column 2), text extending past the right edge of the table,
+and a new row which will have no text in the first column in the processed output (row 4):
+
++----------------------+------------------------------------------------+
+| Header row, column 1 | Header row, column 2                           |
++======================+================================================+
+| body row 1           | Second column of row 1                         |
++----------------------+------------------------------------------------+
+| body row 2           | Second column of row 2                         |
+|                      |                                                |
+|                      | Second line of paragraph                       |
++----------------------+------------------------------------------------+
+| body row 3           | - Second column of row 3                       |
+|                      | - Second item in bullet list (row 3, column 2) |
++----------------------+------------------------------------------------+
+| \                    | Row 4; column 1 will be empty                  |
++----------------------+------------------------------------------------+
 
 
 .. index::
