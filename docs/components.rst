@@ -187,9 +187,6 @@ The following options are recognized:
 figure
 ^^^^^^
 
-A "figure" consists of image data (including image options),
-an optional caption (a single paragraph), and an optional legend (arbitrary body elements).
-
 .. figure:: _static/blossom.png
    :align: right
    :width: 336px
@@ -197,6 +194,20 @@ an optional caption (a single paragraph), and an optional legend (arbitrary body
    :alt: Cherry Blossom
 
    Figure Cherry Blossom
+
+A "figure" consists of image data (including image options),
+an optional caption (a single paragraph), and an optional legend (arbitrary body elements).
+
+The following options are recognized:
+
+- alt
+- figwidth
+- figclass
+- width
+- height
+- scale
+- align
+- target
 
 
 .. index::
