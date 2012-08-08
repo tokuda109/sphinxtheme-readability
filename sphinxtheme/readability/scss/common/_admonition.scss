@@ -1,62 +1,17 @@
 .admonition {
   margin-bottom: 10px;
   padding: 7px 10px;
-  background-color: $admonition-background-color;
-  border-color: $admonition-border-color;
+  background-color: #F1F1F1;
+  border-color: #D4D4D4;
   border-style: solid;
   border-width: 1px;
   @include border-radius(5px);
-  color: $admonition-font-color;
+  color: #333;
   p {
     margin: 0;
   }
   .admonition-title {
     margin-bottom: .3em;
     font-weight: bold;
-  }
-  &.attention {
-    background-color: $attention-background-color;
-    border-color: $attention-background-color;
-    color: $attention-font-color;
-  }
-  &.caution {
-    background-color: $caution-background-color;
-    border-color: $caution-background-color;
-    color: $caution-font-color;
-  }
-  &.danger {
-    background-color: $danger-background-color;
-    border-color: $danger-background-color;
-    color: $danger-font-color;
-  }
-  &.error {
-    background-color: $error-background-color;
-    border-color: $error-background-color;
-    color: $error-font-color;
-  }
-  &.hint {
-    background-color: $hint-background-color;
-    border-color: $hint-background-color;
-    color: $hint-font-color;
-  }
-  &.important {
-    background-color: $important-background-color;
-    border-color: $important-background-color;
-    color: $important-font-color;
-  }
-  &.note {
-    background-color: $note-background-color;
-    border-color: $note-background-color;
-    color: $note-font-color;
-  }
-  &.tip {
-    background-color: $tip-background-color;
-    border-color: $tip-background-color;
-    color: $tip-font-color;
-  }
-  &.warning {
-    background-color: $warning-background-color;
-    border-color: $warning-background-color;
-    color: $warning-font-color;
   }
 }
