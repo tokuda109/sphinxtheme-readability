@@ -1,4 +1,13 @@
-{% extends "readability/layout.html" %}
+{#
+    readability/defindex.html
+    ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Default template for the "index" page.
+
+    :copyright: Copyright 2012 by Tsuyoshi Tokuda.
+    :license: BSD, see LICENSE for details.
+#}
+{% extends "layout.html" %}
 
 {% set title = _('Overview') %}
 
@@ -9,7 +18,7 @@
     {% block description %}the documentation for {{ project|e }}
     {{ release|e }}{% if last_updated %}, last updated {{ last_updated|e }}{% endif %}{% endblock %}.
   </p>
-  {% block tables %}
+{% block tables %}
   <p><strong>{{ _('Indices and tables:') }}</strong></p>
   <table class="contentstable" align="center"><tr>
     <td width="50%">
@@ -24,5 +33,5 @@
          <span class="linkdescr">{{ _('all functions, classes, terms') }}</span></p>
     </td></tr>
   </table>
-  {% endblock %}
+{% endblock %}
 {% endblock %}

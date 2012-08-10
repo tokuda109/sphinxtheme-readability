@@ -1,4 +1,15 @@
+{#
+    readability/layout.html
+    ~~~~~~~~~~~~~~~~~~~~~~~
+
+    Base layout template for readability theme.
+
+    :copyright: Copyright 2012 by Tsuyoshi Tokuda.
+    :license: BSD, see LICENSE for details.
+#}
 {%- set render_sidebar = (not embedded) and (not theme_nosidebar|tobool) and (sidebars != []) %}
+{%- set url_root = pathto('', 1) %}
+
 {%- macro script() %}
 <script type="text/javascript">
 var DOCUMENTATION_OPTIONS = {
@@ -16,16 +27,18 @@ var DOCUMENTATION_OPTIONS = {
 <script type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 {%- endmacro %}
-{%- macro css() -%}
+
+{%- macro css() %}
 <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
 <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
 {%- for cssfile in css_files %}
 <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
 {%- endfor %}
 {%- endmacro %}
+
 {%- macro sidebar() %}
 {%- if render_sidebar %}
-  <aside id="sidebar">
+<aside id="sidebar">
 {%- if sidebars != None %}
 {%- for sidebartemplate in sidebars %}
 {%- include sidebartemplate %}
@@ -38,42 +51,42 @@ var DOCUMENTATION_OPTIONS = {
 {%- endif %}
 {%- if last_updated %}
 {%- trans last_updated=last_updated|e %}
-    <div class="widget updated">
-      <div class="widgetBody">
-        <p>Last updated on {{ last_updated }}.</p>
-      </div>
-    </div><!-- .widget -->
+  <section class="widget updated">
+    <div class="widgetBody">
+      <p>Last updated on {{ last_updated }}.</p>
+    </div>
+  </section><!-- .widget -->
 {%- endtrans %}
 {%- endif %}
 {%- if show_sphinx %}
 {%- trans sphinx_version=sphinx_version|e %}
-    <div class="widget version">
-      <div class="widgetBody">
-        <p>Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.</p>
-      </div>
-    </div><!-- .widget -->
+  <section class="widget version">
+    <div class="widgetBody">
+      <p>Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.</p>
+    </div>
+  </section><!-- .widget -->
 {%- endtrans %}
 {%- endif %}
 {%- if show_copyright %}
 {%- if hasdoc('copyright') %}
 {%- trans path=pathto('copyright'), copyright=copyright|e %}
-    <div class="widget copyright">
-      <div class="widgetBody">
-        <p>&copy; Copyright {{ copyright }}.</p>
-      </div>
-    </div><!-- .widget -->
+  <section class="widget copyright">
+    <div class="widgetBody">
+      <p>&copy; Copyright {{ copyright }}.</p>
+    </div>
+  </section><!-- .widget -->
 {%- endtrans %}
 {%- else %}
 {%- trans copyright=copyright|e %}
-    <div class="widget copyright">
-      <div class="widgetBody">
-        <p>&copy; Copyright {{ copyright }}.</p>
-      </div>
-    </div><!-- .widget -->
+  <section class="widget copyright">
+    <div class="widgetBody">
+      <p>&copy; Copyright {{ copyright }}.</p>
+    </div>
+  </section><!-- .widget -->
 {%- endtrans %}
 {%- endif %}
 {%- endif %}
-  </aside><!-- #sidebar -->
+</aside><!-- #sidebar -->
 {%- endif %}
 {%- endmacro %}
 <!DOCTYPE html>
@@ -123,30 +136,30 @@ var DOCUMENTATION_OPTIONS = {
 
 <body class="{{ theme_readabilitystyle }}">
 {%- block content %}
-  <div id="container">
-    <header id="header">
+<div id="container">
+  <header id="header">
 {%- block headertitle %}
-      <p><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a></p>
+    <p><a href="{{ pathto(master_doc) }}" title="{{ shorttitle|e }}">{{ shorttitle|e }}</a></p>
 {%- endblock %}
 
-      <div class="rel">
+    <div class="rel">
 {%- for rellink in rellinks|reverse %}
-        <a href="{{ pathto(rellink[0]) }}" title="{{ rellink[1]|striptags|e }}" {{ accesskey(rellink[2]) }}><span>{{ rellink[3] }}</span></a>
-        {%- if not loop.last %}{{ reldelim2 }}{% endif %}
+      <a href="{{ pathto(rellink[0]) }}" title="{{ rellink[1]|striptags|e }}" {{ accesskey(rellink[2]) }}><span>{{ rellink[3] }}</span></a>
+      {%- if not loop.last %}{{ reldelim2 }}{% endif %}
 {%- endfor %}
-      </div>
-    </header><!-- #header -->
+    </div>
+  </header><!-- #header -->
 
-    <div id="document">
+  <div id="document">
 {%- block document %}
-      {% block body %}{% endblock %}
+{% block body %}{% endblock %}
 {%- endblock %}
-    </div><!-- #document -->
+  </div><!-- #document -->
 
 {%- include "relations.html" %}
 
 {%- block footer %}{% endblock %}
-  </div><!-- #container -->
+</div><!-- #container -->
 {%- endblock %}
 {{ sidebar() }}
 </body>
