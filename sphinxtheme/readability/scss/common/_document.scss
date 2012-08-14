@@ -62,6 +62,8 @@ body {
   padding: 7px 10px;
   background-color: #F1F1F1;
   border: solid 1px #D4D4D4;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  color: #333;
   .topic-title {
     margin: 0 0 .3em;
     font-weight: bold;
@@ -72,6 +74,19 @@ body {
       margin-bottom: 0;
     }
   }
+}
+
+.versionadded {
+  
+}
+.versionchanged {
+  
+}
+.deprecated {
+  
+}
+.seealso {
+  
 }
 /* Align
 ================================================== */
@@ -163,5 +178,7 @@ li,dt,dd {
 code {
   margin: 0 3px;
   padding: 2px;
+  background: #F1F1F1;
   border: solid 1px #EEE;
+  color: #333;
 }

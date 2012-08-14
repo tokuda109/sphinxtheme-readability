@@ -245,6 +245,9 @@ Topic
 -----
 
 A topic is like a block quote with a title, or a self-contained section with no subsections.
+Use the "topic" directive to indicate a self-contained idea that is separate from the flow of the document. 
+Topics may occur anywhere a section or transition may occur.
+Body elements and topics may not contain nested topics.
 
 .. topic:: Topic Title
 
@@ -263,57 +266,38 @@ Admonitions
 
 Admonitions are specially marked "topics" that can appear anywhere an ordinary
 body element can. They contain arbitrary body elements.
+Typically, an admonition is rendered as an offset block in a document,
+sometimes outlined or shaded, with a title matching the admonition type.
 
-attention
-^^^^^^^^^
+For example:
+
+.. admonition:: Admonition title
+
+   This is sample of "Generic" admonition directive.
 
 .. attention::
    This is sample of "Attention" admonition directive.
 
-caution
-^^^^^^^
-
 .. caution::
    This is sample of "Caution" admonition directive.
-
-danger
-^^^^^^
 
 .. danger::
    This is sample of "Danger" admonition directive.
 
-error
-^^^^^
-
 .. error::
    This is sample of "Error" admonition directive.
 
-hint
-^^^^
-
-.. error::
+.. hint::
    This is sample of "Hint" admonition directive.
-
-important
-^^^^^^^^^
 
 .. important::
    This is sample of "Important" admonition directive.
 
-note
-^^^^
-
 .. note::
    This is sample of "Note" admonition directive.
 
-tip
-^^^
-
 .. tip::
    This is sample of "Tip" admonition directive.
-
-warning
-^^^^^^^
 
 .. warning::
    This is sample of "Warning" admonition directive.
