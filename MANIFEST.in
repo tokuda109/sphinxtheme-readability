@@ -3,5 +3,9 @@ include LICENSE
 include README.rst
 include MANIFEST.in
 
-recursive-include docs *.html *.css *.png *.gif
+recursive-include docs *
+recursive-exclude docs *.pyc
+recursive-exclude docs *.pyo
 recursive-include sphinxtheme *.py *.html *.css* *.conf *.png
+
+prune docs/_build
