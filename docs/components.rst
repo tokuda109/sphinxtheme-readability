@@ -16,24 +16,14 @@ And heading takes a lot of margin in order to stand out.
 .. raw:: html
 
    <h1>This is an H1 Heading</h1>
-   <p>The above is an <code>h1</code> element.</p>
 
 .. raw:: html
 
    <h2>This is an H2 Heading</h2>
-   <p>
-     The above is an <code>h2</code> element.<br />
-     It can be used throughout the page as a sub-section of <code>h1</code>.<br />
-     Multiple <code>h2</code> elements can be used, however they must not be used as sub-headings of themselves.
-   </p>
 
 .. raw:: html
 
    <h3>This is an H3 Heading</h3>
-   <p>
-     The above is an <code>h3</code> element.<br />
-     It should be used as the first subheading below <code>h2</code>.
-   </p>
 
 .. raw:: html
 
